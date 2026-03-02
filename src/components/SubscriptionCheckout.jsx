@@ -25,7 +25,8 @@ const SubscriptionCheckout = ({ onClose }) => {
 
     try {
       // Paso 1: Crear Checkout Session en el backend
-      const response = await fetch('http://localhost:3000/api/create-subscription-checkout', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      const response = await fetch(`${apiUrl}/api/create-subscription-checkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

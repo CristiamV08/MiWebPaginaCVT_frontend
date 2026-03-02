@@ -734,7 +734,9 @@ const Products = () => {
                     <span className="text-2xl">🎮</span>
                     Ver Demo Interactivo
                   </button>
-                  <div className="text-gray-400 font-medium">o</div>
+                  
+                  {/* Trial con Stripe - Deshabilitado temporalmente */}
+                  {/* <div className="text-gray-400 font-medium">o</div>
                   <a 
                     href="http://localhost:5175"
                     target="_blank"
@@ -743,7 +745,7 @@ const Products = () => {
                   >
                     <span className="text-2xl">🎯</span>
                     Iniciar Trial Gratuito de 15 días
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
